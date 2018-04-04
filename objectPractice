@@ -1,0 +1,22 @@
+class person {
+  constructor(firstName, lastName, email, payment, address) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.payment = payment;
+    this.address = address;
+  }
+}
+
+class ticket extends person{
+  constructor(firstName, lastName, email, payment, address, ticketId, date, time, location, event){
+    super(firstName, lastName, email, payment, address);
+    this.ticketId = ticketId;
+    this.date = date;
+    this.time = time;
+    this.location = location;
+    this.event = event;
+  }
+}
+
+var newT = new ticket('Vivian', 'San', 'viv@gmail.com', 'paypal', '303 Second St.', '001', '04/01/2018', '20:00', 'San Francisco', 'Concert: Beyonce');
